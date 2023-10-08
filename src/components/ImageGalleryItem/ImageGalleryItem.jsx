@@ -17,13 +17,11 @@ export class ImageGalleryItem extends Component {
 
   render() {
     return (
-      <li
-        className={css.imageGalleryItem}
-        onClick={() => {
-          this.openModal();
-        }}
-      >
+      <li className={css.imageGalleryItem}>
         <img
+          onClick={() => {
+            this.openModal();
+          }}
           className={css.imageGalleryItemimage}
           src={this.props.webformatURL}
           alt=""
